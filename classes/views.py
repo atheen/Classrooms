@@ -80,7 +80,7 @@ def classroom_create(request):
 			class_obj.teacher = request.user
 			class_obj.save()
 			messages.success(request, "Successfully Created!")
-			return redirect('classroom-list')
+			return redirect('classroom-list'
 		print (form.errors)
 	context = {
 	"form": form,
